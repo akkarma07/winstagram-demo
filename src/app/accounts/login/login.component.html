@@ -1,0 +1,47 @@
+<div class="container-login">
+  <div class="wrap-login">
+    <div class="login100-form validate-form">
+      <div class="clip-art-background title">
+      </div>
+      <div class="FBi-h align-stretch item-stretch content-flex-start flex-auto">
+      </div>
+      <div class="wrap-input validate-input">
+        <!-- <input class="" type="text" name="email"> -->
+        <span #userNameTitle class="input-title">Phone number, username, or email</span>
+        <input (input)="userNameChangeTextEvent(userNameTitle,$event.target.value )"
+          aria-label="Phone number, username, or email" aria-required="true" autocomplete="off" autocapitalize="off"
+          autocorrect="off" maxlength="75" name="username" type="text" class="input" value="">
+      </div>
+      <div class="wrap-input validate-input" data-validate="Enter password">
+        <span #passwordTitle class="input-title">Password</span>
+        <input (input)="userNameChangeTextEvent(passwordTitle, $event.target.value)" class="input" type="password"
+          name="pass">
+      </div>
+      <div class="container-login100-form-btn">
+        <div class="wrap-login100-form-btn">
+          <div class="login100-form-bgbtn"></div>
+          <button class="login100-form-btn">
+            Log In
+          </button>
+        </div>
+      </div>
+      <div class="separator-row separator">
+        <div class="side-row"></div>
+        <div class="separator-title">or</div>
+        <div class="side-row"></div>
+      </div>
+
+      <div class="margin-top margin-right margin-bottom margin-left">
+        <button type="button"><span class="coreSpriteFacebookIcon AeB99"></span><span class="facebook-color">Log in with
+            Facebook</span></button>
+          </div>
+          <a class="forgetpw" href="" >Forgot password?</a> 
+    </div>
+  </div>
+  <div class="wrap-login mini-wrap">
+    <div class="margin-top margin-right margin-bottom margin-left">
+       <p class="p-line" > Don't have an account?   <a class="anchor" href="accounts/sign-up" >Sign Up</a></p>
+    </div>
+  </div>
+
+</div>

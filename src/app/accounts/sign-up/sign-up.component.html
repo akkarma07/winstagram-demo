@@ -1,0 +1,39 @@
+<div class="container-login">
+  <div class="wrap-login">
+    <div class="login100-form validate-form">
+      <div class="clip-art-background title">
+      </div>
+      <div class="FBi-h align-stretch item-stretch content-flex-start flex-auto">
+      </div>
+      <div class="wrap-input sign-up" >
+        <span #mobileOrEmailTitle class="input-title">Mobile Number or Email</span>
+        <input (input)="userNameChangeTextEvent(mobileOrEmailTitle,$event.target.value )"  autocomplete="off" autocapitalize="off" autocorrect="off" maxlength="75" name="username" type="text" class="input" value="">
+      </div>
+      <div class="wrap-input sign-up" >
+        <span #fullNameTitle class="input-title">Full Name</span>
+        <input (input)="userNameChangeTextEvent(fullNameTitle,$event.target.value )"  autocomplete="off" autocapitalize="off" autocorrect="off" maxlength="75" name="username" type="text" class="input" value="">
+      </div>
+      <div class="wrap-input sign-up" >
+        <span #userNameTitle class="input-title">Username</span>
+        <input (input)="userNameChangeTextEvent(userNameTitle,$event.target.value )"  autocomplete="off" autocapitalize="off" autocorrect="off" maxlength="75" name="username" type="text" class="input" value="">
+      </div>
+      <div class="wrap-input sign-up" data-validate="Enter password">
+        <span #passwordTitle class="input-title">Password</span>
+        <input (input)="userNameChangeTextEvent(passwordTitle, $event.target.value)"  class="input" type="password" name="pass">
+      </div>
+      <div class="container-login100-form-btn">
+        <div class="wrap-login100-form-btn">
+          <div class="login100-form-bgbtn"></div>
+          <button class="login100-form-btn">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap-login mini-wrap">
+    <div class="margin-top margin-right margin-bottom margin-left">
+       <p class="p-line" > Have an account?   <a class="anchor" href="accounts/login" >Log In</a></p>
+    </div>
+  </div>
+</div>
